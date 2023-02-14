@@ -5,6 +5,7 @@
 
 trigger:
 #- main
+- releases/*
 
 pool:
   #vmImage: $(imageName)
