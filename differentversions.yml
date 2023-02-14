@@ -9,6 +9,14 @@ trigger:
 pool:
   #vmImage: $(imageName)
   vmImage: "ubuntu-latest"
+#single platform and multiple versions
+strategy:
+  matrix:
+    jdk10:
+      jdkVersion: "1.10"
+    jdk11:
+      jdkVersion: "1.11"
+  maxParallel: 2
 
 steps:
 - task: Maven@3
@@ -21,6 +29,7 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
+    
 - task: PublishCodeCoverageResults@1
   inputs:
     codeCoverageTool: "JaCoCo"
