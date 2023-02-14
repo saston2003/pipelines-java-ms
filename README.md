@@ -1,5 +1,7 @@
 [![Build Status](https://dev.azure.com/sastonz400/eShopOnWeb/_apis/build/status/saston2003.pipelines-java-ms?branchName=main)](https://dev.azure.com/sastonz400/eShopOnWeb/_build/latest?definitionId=23&branchName=main)
 
+
+
 # Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
